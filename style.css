@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    background-color:#232323;
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+
+* {
+    padding: 0;
+    overflow-x: hidden;
+}
+.banner img {
+    width: 100%;
+    max-height: 340px;
+    object-fit:contain;
+    margin: 0 auto;
+    background: linear-gradient(90deg,#1d5bcf, #1d5bcf,#1d5bcf,#4a8aff,#4a8aff,#4a8aff)
+}
+
+.container {
+    background-color:#1f1f1f;
+    width: 100%;
+    height: auto;
+    padding: 50px 50px;
+    margin: 0 auto;
+    overflow: hidden;
+    columns: 2;
+    column-gap: 10%;
+}
+
+.image {
+    margin: 0 auto;
+    margin-right: 300px;
+    display: block;
+    width: 25%;
+    height: auto;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.info{
+    color: white;
+    font-size: 27px;
+
+}
+@keyframes move {
+    0% {transform: rotate(0deg);}
+    80% {transform: rotate(-360deg)}
+    100% {transform: rotate(0deg);}
+}
+.bioh{
+    text-align: center; 
+    font-size: 40px;
+}
+.biop{
+    text-align: justify; 
+    font-size: 20px; 
+    width: 85%; 
+    margin: 0 auto; 
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+/* FOOTER */
+footer {
+    background-color: #1f1f1f;
+    border-top: 1px solid rgb(26, 26, 26);
+    padding: 20px; 
+    text-align: center; 
+    width: 100%; 
+    color: white; 
+    position: relative; 
+    bottom: 0; 
+    left: 0;
+    z-index: 11;
+}
+footer a{
+    color: white; 
+    cursor: pointer; 
+    text-decoration: 
+    underline; 
+    text-decoration-color: #618cdb;
+}
+footer a:hover{
+    color: #c5c5c5; 
+
+}
